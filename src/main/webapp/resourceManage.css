@@ -1,0 +1,35 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: aqua;
+    
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+}
+
+.resource-list {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.crud-operations {
+    flex: 1;
+}
+
+#resource-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#resource-list li {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+#resource-list li:last-child {
+    border-bottom: none;
+}

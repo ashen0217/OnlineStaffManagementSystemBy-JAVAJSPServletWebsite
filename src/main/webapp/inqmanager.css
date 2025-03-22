@@ -1,0 +1,37 @@
+/* style.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: lightblue;
+}
+
+#inquiry-form {
+    margin-bottom: 20px;
+}
+
+#inquiries-table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#inquiries-table th, #inquiries-table td {
+    border: 1px solid #100a32;
+    padding: 10px;
+    text-align: left;
+}
+
+#update-modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(17, 129, 166);
+    padding: 20px;
+    border: 1px solid #ccc;
+    display: none;
+}
+
+#update-modal h2 {
+    margin-top: 0;
+}

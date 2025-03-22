@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<element>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" version="4.0">
+  <display-name>StaffManagementDemo</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet>
+		<servlet-name>loginServlet</servlet-name>
+		<servlet-class>com.memberLogin.loginServlet</servlet-class>
+		</servlet>		
+		<servlet-mapping>
+			<servlet-name>loginServlet</servlet-name>
+			<url-pattern>/log</url-pattern>
+		</servlet-mapping>
+			
+		<servlet>
+			  <servlet-name>staffMember-insert</servlet-name>
+			  <servlet-class>com.memberLogin.StaffmemberInsert</servlet-class>
+		</servlet>
+		<servlet-mapping>
+			  <servlet-name>staffMember-insert</servlet-name>
+			  <url-pattern>/insert</url-pattern>
+		</servlet-mapping>
+			
+		<servlet>
+			<servlet-name>UpdateStaff</servlet-name>
+			<servlet-class>com.memberLogin.UpdateStaffMemberServlet</servlet-class>
+		</servlet>
+		<servlet-mapping>
+			<servlet-name>UpdateStaff</servlet-name>
+			<url-pattern>/update</url-pattern>
+		</servlet-mapping>
+				
+		<servlet>
+			<servlet-name>delete-staff</servlet-name>
+			<servlet-class>com.memberLogin.DeleteMemberServlet</servlet-class>
+		</servlet>
+		<servlet-mapping>
+			<servlet-name>delete-staff</servlet-name>
+			<url-pattern>/delete</url-pattern>
+		</servlet-mapping>
+		<servlet>
+			<servlet-name>login-inquiry</servlet-name>
+			<servlet-class>com.Inquiries.InquiryLogin</servlet-class>
+		</servlet>
+		<servlet-mapping>
+			<servlet-name>login-inquiry</servlet-name>
+			<url-pattern>/loginInquiry</url-pattern>
+		</servlet-mapping>
+			
+		<servlet>
+			<servlet-name>insert-inquiry</servlet-name>
+			<servlet-class>com.Inquiries.InquiryInsertServlet</servlet-class>
+		</servlet>
+		<servlet-mapping>
+			<servlet-name>insert-inquiry</servlet-name>
+			<url-pattern>/insertInquiry</url-pattern>
+		</servlet-mapping>
+			
+		<servlet>
+			<servlet-name>update-inquiry</servlet-name>
+			<servlet-class>com.Inquiries.UpdateInquiryServlet</servlet-class>
+		</servlet>
+		<servlet-mapping>
+			<servlet-name>update-inquiry</servlet-name>
+			<url-pattern>/updateInquiry</url-pattern>
+		</servlet-mapping>
+			
+		<servlet>
+			<servlet-name>delete-inquiry</servlet-name>
+			<servlet-class>com.Inquiries.DeleteInquiryServlet</servlet-class>
+		</servlet>
+		<servlet-mapping>
+			<servlet-name>delete-inquiry</servlet-name>
+			<url-pattern>/deleteInquiry</url-pattern>
+		</servlet-mapping>
+			
+		<servlet>
+			<servlet-name>insert-TransportService</servlet-name>
+			<servlet-class>com.TransportService.TransportInsertServlet</servlet-class>
+		</servlet>
+		<servlet-mapping>
+			<servlet-name>insert-TransportService</servlet-name>
+			<url-pattern>/insertTransport</url-pattern>
+		</servlet-mapping>
+		
+		<servlet>
+			<servlet-name>update-TransportService</servlet-name>
+			<servlet-class>com.TransportService.UpdateTransportServlet</servlet-class>
+		</servlet>
+		<servlet-mapping>
+			<servlet-name>update-TransportService</servlet-name>
+			<url-pattern>/updateTransport</url-pattern>
+		</servlet-mapping>
+		
+		<servlet>
+			<servlet-name>delete-TransportService</servlet-name>
+			<servlet-class>com.TransportService.DeleteTransportServlet</servlet-class>
+		</servlet>
+		<servlet-mapping>
+			<servlet-name>delete-TransportService</servlet-name>
+			<url-pattern>/deleteTransport</url-pattern>
+		</servlet-mapping>
+		
+		<servlet>
+			<servlet-name>insert-Resource</servlet-name>
+			<servlet-class>com.ManageResources.ResourcServlet</servlet-class>
+		</servlet>
+		<servlet-mapping>
+			<servlet-name>insert-Resource</servlet-name>
+			<url-pattern>/insertResource</url-pattern>
+		</servlet-mapping>
+		
+		<servlet>
+			<servlet-name>update-Resource</servlet-name>
+			<servlet-class>com.ManageResources.UpdateResourcServlet</servlet-class>
+		</servlet>
+		<servlet-mapping>
+			<servlet-name>update-Resource</servlet-name>
+			<url-pattern>/updateResource</url-pattern>
+		</servlet-mapping>
+		
+		<servlet>
+			<servlet-name>delete-Resource</servlet-name>
+			<servlet-class>com.ManageResources.DeleteResourcServlet</servlet-class>
+		</servlet>
+		<servlet-mapping>
+			<servlet-name>update-Resource</servlet-name>
+			<url-pattern>/deleteResource</url-pattern>
+		</servlet-mapping>	
+		
+		<servlet>
+			<servlet-name>view-Transport</servlet-name>
+			<servlet-class>com.TransportService.ViewTransportServlet</servlet-class>
+		</servlet>
+		<servlet-mapping>
+			<servlet-name>view-Transport</servlet-name>
+			<url-pattern>/deleteResource</url-pattern>
+		</servlet-mapping>	
+</web-app>
+</element>
+
+
